@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&family=Roboto:wght@100&display=swap");
+
+body {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3em;
+  margin-top: -0.7em;
+}
+
+h3 {
+  font-size: 2.1em;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.6em;
+}
+
+a {
+  text-decoration: none;
+  color: #1c75ba;
+}
+#logo {
+  width: 20em;
+  height: auto;
+  /* margin: 2em; */
+  margin-top: 5em;
+}
+
+#side-image {
+  width: 100%;
+  height: auto;
+}
+#sign {
+  width: 10em;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 2.2em;
+  align-items: start;
+  /* grid-auto-columns: minmax(100px, auto); */
+}
+
+.countries-container {
+  display: flex;
+  justify-content: space-between;
+  /* width: 80%; */
+}
+
+.content-container {
+  /* margin: 2.2em; */
+  /* width: 80%; */
+  padding: 1em 3em;
+  width: 90%;
+}
+
+.sign-name {
+  width: 10em;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.footer {
+  border-top: 2px solid black;
+  width: 90%;
+}
+
+.countries-container {
+  font-size: 2em;
+  color: #1c75ba;
+  font-weight: 400;
+}
+.countries {
+  margin-top: 1.5em;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.image-section {
+  height: 100vh;
+  position: relative;
+}
