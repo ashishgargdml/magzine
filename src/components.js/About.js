@@ -9,18 +9,17 @@ import uae from "../Assets/image/dubai.png";
 
 const About = () => {
   return (
-    <div>
-      <main className="main-container">
-        <section className="image-section">
-          <img src={bg} alt="info" id="side-image" align='left' />
-        </section>
-        <section className="content-container">
-          <header className="header-logo">
-            <img src={logo} alt="logo" id="logo" />
-          </header>
+    <main className="main-body">
+      <div className="grid">
+        <div className="image">
+          <img src={bg} alt="info" />
+        </div>
+        <div className="content-container">
+          <img src={logo} alt="logo" id="logo" />
+          <h1>A MESSAGE FROM</h1>
+          <h2>SACHIN KHOSLA ,</h2>
+          <h3>CEO & FOUNDER</h3>
           <main className="content">
-            <h1>A MESSAGE FROM</h1> <h2>SACHIN KHOSLA ,</h2>{" "}
-            <h3>CEO & FOUNDER</h3>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -46,32 +45,39 @@ const About = () => {
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam
             </p>
-              <img src={sign} alt="sign" id="sign" />
-            <h1 className="sign-name">SACHIN KHOSLA , CEO & FOUNDER</h1>
+            <div className="sign">
+              <img src={sign} alt="sign" id="sign-img" />
+              <h3>SACHIN KHOSLA , </h3>
+              <h3>CEO & FOUNDER</h3>
+            </div>
+            <hr />
             <div className="footer">
-            <div className="countries-container">
-              <h2 className="countries">
-                INDIA  
-                <img src={india} alt="india" height={'22px'}  />
-              </h2>
-              <h2 className="countries">
-                DUBAI
-                <img src={uae} alt="uae" height={'22px'} />
-              </h2>
-              <h2 className="countries">
-                US
-                <img src={usa} alt="us" height={'22px'} />
-              </h2>
-            </div>
-            <div className="website-link">
-              <a href="https://digimantralabs.com/">www.digimantralabs.com</a>
-            </div>
+                <ul>
+                  <li>
+                    INDIA
+                    <img src={india} alt="india" height={"22px"} />
+                  </li>
+                  <li>
+                    {" "}
+                    DUBAI
+                    <img src={uae} alt="uae" height={"22px"} />
+                  </li>
+                  <li>
+                    {" "}
+                    US
+                    <img src={usa} alt="us" height={"22px"} />
+                  </li>
+                </ul>
+                <p className="website-link">
+                  <a href="https://digimantralabs.com/">
+                    www.digimantralabs.com
+                  </a>
+                </p>
             </div>
           </main>
-        </section>
-      </main>
-      {/* <footer></footer> */}
-    </div>
+        </div>
+      </div>
+    </main>
   );
 };
 
